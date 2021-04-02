@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavbarV1 
+    logo="Adak" 
+    :links="[
+      {title: 'Home', href: '#'},
+      {title: 'Portfolio', href: '#'},
+      {title: 'Blog', href: '#'},
+      {title: 'About', href: '#'},
+      {title: 'Contact', href: '#'}
+    ]" 
+    size="md"
+    bgColor="purple"
+    bgIntensity="400"
+    textColor="white"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarV1 from "./components/Navbars/Navbar-v1/NavbarV1.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavbarV1
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
