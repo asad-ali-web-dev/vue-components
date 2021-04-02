@@ -9,7 +9,7 @@
     "build-tailwind": "npx tailwindcss-cli@latest build ./static/tailwind.css -o ./public/css/styles.css",
     "build-tailwind-production": "set NODE_ENV=production&&npx tailwindcss-cli@latest build ./static/tailwind.css -o ./public/css/styles.css",
     "git-init": "git init && git add . && git commit -m '' && git remote add origin https://github.com/asad-ali-web-dev/vue-components.git && git push origin master",
-    "git-push": "git add . git commit -m 'Saving Changes and pushing to the github repository...' && git push origin master"
+    "git-push": "git add . && git commit -m 'pushing-changes-to-github' && git push origin master"
   },
   "dependencies": {
     "core-js": "^3.6.5",
